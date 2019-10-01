@@ -1,3 +1,3 @@
 # BPNews
  BPNews
-you can download the apk file to see the output.
+you can download the BPNews.apk file to see the output.
