@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <com.github.mikephil.charting.charts.LineChart
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="15dp"
+        android:id="@+id/Linechart">
+
+    </com.github.mikephil.charting.charts.LineChart>
+
+    <EditText
+        android:id="@+id/textViewS"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:layout_below="@+id/Linechart"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginStart="45dp"
+        android:layout_marginLeft="45dp"
+        android:layout_marginTop="23dp"
+        android:background="@drawable/border"
+        android:singleLine="true"
+        android:hint="請輸入收縮壓"
+        android:gravity="center"
+        android:textSize="25sp"
+        android:inputType="number"/>
+
+
+    <EditText
+        android:id="@+id/textViewD"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:layout_below="@+id/Linechart"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginStart="45dp"
+        android:layout_marginLeft="45dp"
+        android:layout_marginTop="115dp"
+        android:background="@drawable/border"
+        android:singleLine="true"
+        android:hint="請輸入舒張壓"
+        android:gravity="center"
+        android:textSize="25sp"
+        android:inputType="number"/>
+
+    <Button
+        android:id="@+id/buttonadd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Linechart"
+        android:layout_marginStart="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="122dp"
+        android:layout_marginRight="70dp"
+        android:layout_toEndOf="@+id/textViewD"
+        android:layout_toRightOf="@+id/textViewD"
+        android:background="@drawable/borderbutton"
+        android:gravity="center"
+        android:text="登入"
+        android:textSize="15sp"
+        />
+
+    <Button
+        android:id="@+id/buttonnext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewD"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="26dp"
+        android:layout_marginEnd="256dp"
+        android:layout_marginRight="256dp"
+        android:gravity="center"
+        android:text="檢視血壓記錄" />
+
+    <Button
+        android:id="@+id/buttonclean"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/buttonnext"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="256dp"
+        android:layout_marginRight="256dp"
+        android:text="清除血壓記錄" />
+
+
+
+</RelativeLayout>
